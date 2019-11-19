@@ -33,7 +33,4 @@ def FibonacciSequence(n):
     :param n:   Operand
     :return:    fib(n) as list of fibonacci numbers, [0, 1, 1, 2, ... ]
     '''
-    sequence = []
-    for i in range(n):
-        sequence.append(FibonacciRecursion(i))
-    return (sequence)
+    return [FibonacciRecursion(i) for i in range(n)]
