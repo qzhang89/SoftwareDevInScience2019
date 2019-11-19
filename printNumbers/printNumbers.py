@@ -62,7 +62,7 @@ if __name__ == '__main__':
     # Call corresponding function with <functionIndex> from <functionTable>.
     result = functionTable[params.functionIndex](params.operand)
     result2 = functionTable[params.functionIndex](params.operand)
-
+    result3 = functionTable[params.functionIndex](params.operand)
 
     # Print results depending on the executed function.
     if params.functionIndex == CONST_FUNC_CODE_FIBONACCI:
