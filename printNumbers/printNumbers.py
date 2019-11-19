@@ -33,6 +33,7 @@ Options:
   -h --help       Print usage.
   --fibonacci     Print the fibonacci sequence.
   --factorial     Print the factorial.
+  <operand>       Is a number
 """
 
 from docopt import docopt
