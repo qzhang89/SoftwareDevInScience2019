@@ -19,14 +19,14 @@
 # You should have received a copy of the GNU General Public License
 # along with printNumbers.  If not, see <http://www.gnu.org/licenses/>.
 
-def FibonacciRecursion(n):
-    '''
-    Helper function.
-    '''
-    if n <= 1:
-        return n
-    else:
-        return (FibonacciRecursion(n - 1) + FibonacciRecursion(n - 2))
+# def FibonacciRecursion(n):
+#     '''
+#     Helper function.
+#     '''
+#     if n <= 1:
+#         return n
+#     else:
+#         return (FibonacciRecursion(n - 1) + FibonacciRecursion(n - 2))
 
 def FibonacciSequence(n):
     '''
