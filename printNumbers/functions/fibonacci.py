@@ -19,18 +19,30 @@
 # You should have received a copy of the GNU General Public License
 # along with printNumbers.  If not, see <http://www.gnu.org/licenses/>.
 
-def FibonacciRecursion(n):
-    '''
-    Helper function.
-    '''
-    if n <= 1:
-        return n
-    else:
-        return (FibonacciRecursion(n - 1) + FibonacciRecursion(n - 2))
+# def FibonacciRecursion(n):
+#     '''
+#     Helper function.
+#     '''
+#     if n <= 1:
+#         return n
+#     else:
+#         return (FibonacciRecursion(n - 1) + FibonacciRecursion(n - 2))
 
 def FibonacciSequence(n):
     '''
     :param n:   Operand
     :return:    fib(n) as list of fibonacci numbers, [0, 1, 1, 2, ... ]
     '''
-    return [FibonacciRecursion(i) for i in range(n)]
+    # return [FibonacciRecursion(i) for i in range(n)]
+    # sequence = []
+    # for i in range(n):
+    #     sequence.append(FibonacciRecursion(i))
+    # return (sequence)
+    
+    # Zhang's version
+    fib = [0]*n
+    if n>0: fib[0] = 0
+    if n>1: fib[1] = 1
+    for i in range(2,n):
+        fib[i] = fib[i-1] + fib[i-2]
+    return fib
