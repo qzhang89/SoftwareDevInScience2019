@@ -33,7 +33,16 @@ def FibonacciSequence(n):
     :param n:   Operand
     :return:    fib(n) as list of fibonacci numbers, [0, 1, 1, 2, ... ]
     '''
-    sequence = []
-    for i in range(n):
-        sequence.append(FibonacciRecursion(i))
-    return (sequence)
+    # sequence = []
+    # for i in range(n):
+    #     sequence.append(FibonacciRecursion(i))
+    # return (sequence)
+    
+    # Zhang's version
+    print('Zhang says,')
+    fib = [0]*n
+    if n>=0: fib[0] = 0
+    if n>=1: fib[1] = 1
+    for i in range(2,n):
+        fib[i] = fib[i-1] + fib[i-2]
+    return fib
