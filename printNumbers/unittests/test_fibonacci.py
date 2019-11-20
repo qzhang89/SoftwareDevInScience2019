@@ -30,6 +30,8 @@ import unittest
 from functions.fibonacci import *
 
 class TestFibonacci(unittest.TestCase):
+    def test_value_0(self):
+        self.assertEqual(FibonacciSequence(0), [] )
 
     def test_value_1(self):
         self.assertEqual(FibonacciSequence(1), [0] )

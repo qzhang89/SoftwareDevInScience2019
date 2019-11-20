@@ -39,6 +39,9 @@ class TestFactorial(unittest.TestCase):
 
     def test_value_2(self):
         self.assertEqual(Factorial(2), 2)
+    
+    def test_value_3(self):
+        self.assertEqual(Factorial(3), 6)
 
     def test_value_20(self):
         self.assertEqual(Factorial(20), 2432902008176640000)
